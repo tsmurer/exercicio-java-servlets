@@ -1,0 +1,68 @@
+html
+{
+    font-size: 62.5%;
+    font-family: 'Amiri', serif;
+}
+
+#home-title
+{
+    position: absolute;
+    left: 50%;
+    top: 5rem;
+    transform: translateX(-50%);
+    font-size: 8rem;
+}
+
+#login-form, #signup-form
+{
+    display: inline-block;
+    padding: 5rem;
+    height: auto;
+    width: auto;
+}
+
+#login-form
+{
+    border-right: grey solid 1px;
+}
+
+.form-title
+{
+    font-family: font-family: 'Roboto Mono', monospace;
+}
+
+#twin-form
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1, form, input, button {
+    display: block;
+    margin: .5rem;
+}
+
+.button1
+{
+    color: #f6f6f6;
+    border: none;
+    height: 5rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    transition: transform 0.2s;
+}
+
+#signup-button
+{
+    background-color: #ff502f;
+
+}
+
+
+#login-button
+{   
+    margin-top: 3rem;
+    background-color: #49beb7;
+}
