@@ -1,9 +1,9 @@
 package model;
 
-
+/*
 @Entity
 @Table(name="USUARIO")
-
+*/
 public class Usuario {
 	private String email;
 	private String senha;
