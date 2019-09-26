@@ -12,7 +12,7 @@
     <title>SignUp/SignIn</title>
 </head>
 <body>
-    <h1 id="home-title">the websitest</h1>
+    <h1 id="home-title">the nicest website</h1>
     <div id="twin-form">
         <div id="login-form">
             <h1 class="form-title">Entrar</h1>

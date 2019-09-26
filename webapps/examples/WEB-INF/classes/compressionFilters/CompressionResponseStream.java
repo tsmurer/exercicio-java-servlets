@@ -110,10 +110,7 @@ public class CompressionResponseStream extends ServletOutputStream {
     // --------------------------------------------------------- Public Methods
 
     /**
-     * Set debug level.
-     *
-     * @param debug The higher the number, the more detail shown. Currently the
-     *              range 0 (none) to 3 (everything) is used.
+     * Set debug level
      */
     public void setDebugLevel(int debug) {
         this.debug = debug;
@@ -142,9 +139,7 @@ public class CompressionResponseStream extends ServletOutputStream {
     }
 
     /**
-     * Set supported mime types.
-     *
-     * @param compressionMimeTypes The mimetypes that will be compressed.
+     * Set supported mime types
      */
     public void setCompressionMimeTypes(String[] compressionMimeTypes) {
         this.compressionMimeTypes = compressionMimeTypes;
@@ -406,15 +401,15 @@ public class CompressionResponseStream extends ServletOutputStream {
 
     // -------------------------------------------------------- Package Methods
 
+
     /**
      * Has this response stream been closed?
-     *
-     * @return <code>true</code> if the stream has been closed, otherwise false.
      */
     public boolean closed() {
-        return closed;
-    }
 
+        return (this.closed);
+
+    }
 
     /**
      * Checks if any entry in the string array starts with the specified value
