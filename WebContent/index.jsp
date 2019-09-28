@@ -25,7 +25,7 @@
         <div id="signup-form">
             <h1 class="form-title">Cadastrar</h1>
             <form method="POST" action="nicestservlet1">
-                <input type="text" name="" id="" placeholder="email">
+                <input type="email" name="" id="" placeholder="email">
                 <input type="password" name="" id="" placeholder="senha">
                 <input type="password" name="" id="" placeholder="confirmar senha">
                 <button id="signup-button" class="button1">Cadastrar</button>

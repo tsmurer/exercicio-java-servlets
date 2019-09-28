@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import model.Usuario;
+
 /**
  * Servlet implementation class nicestservlet1
  */
@@ -24,7 +26,7 @@ public class nicestservlet1 extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	/*protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		response.getWriter().append("O servlet tá funcionando");
 	}
@@ -33,8 +35,17 @@ public class nicestservlet1 extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
-	}
+
+			String email = (String) request.getAttribute("email");
+			String senha = (String) request.getAttribute("senha");
+			
+			Usuario usuario = new Usuario(email, senha);
+			try{
+				new UsuarioController().save(usuario);
+			}catch(Exception se){
+				se.printStackTrace(response.getWriter());
+			}
+
+		}
 
 }
